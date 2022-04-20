@@ -1,13 +1,13 @@
 
 public class DiceBag {
 
-	private Dice k4;
-	private Dice k6;
-	private Dice k8;
-	private Dice k10;
-	private Dice k12;
-	private Dice k20;
-	private Dice k100;
+	private static Dice k4;
+	private static Dice k6;
+	private static Dice k8;
+	private static Dice k10;
+	private static Dice k12;
+	private static Dice k20;
+	private static Dice k100;
 	
 	DiceBag (){
 	this.k4 = new Dice(4);
@@ -21,43 +21,43 @@ public class DiceBag {
 	/**
 	returns a 4-sided dice
 	*/
-	public Dice getK4() {
+	static public Dice getK4() {
 		return k4;
 	}
 	/**
 	returns a 6-sided dice
 	*/
-	public Dice getK6() {
+	static public Dice getK6() {
 		return k6;
 	}
 	/**
 	returns a 8-sided dice
 	*/
-	public Dice getK8() {
+	static public Dice getK8() {
 		return k8;
 	}
 	/**
 	returns a 10-sided dice
 	*/
-	public Dice getK10() {
+	static public Dice getK10() {
 		return k10;
 	}
 	/**
 	returns a 12-sided dice
 	*/
-	public Dice getK12() {
+	static public Dice getK12() {
 		return k12;
 	}
 	/**
 	returns a 20-sided dice
 	*/
-	public Dice getK20() {
+	static public Dice getK20() {
 		return k20;
 	}
 	/**
 	returns a 100-sided dice (originally built from two 10-sided dices or single Zocchihedron)
 	*/
-	public Dice getK100() {
+	static public Dice getK100() {
 		return k100;
 	}
 }
