@@ -7,12 +7,14 @@ import java.awt.event.KeyEvent;
 
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 
 public class DiceBagWindow implements ActionListener{
 
 	JFrame frame;
+	JLabel resultLabel;
 	JMenuBar menuBar;
 	JMenu fileMenu;
 	JMenu editMenu;
@@ -29,6 +31,7 @@ public class DiceBagWindow implements ActionListener{
 		
 		frame = new JFrame(title);
 		
+		resultLabel = new JLabel();
 		
 		ImageIcon logo = new ImageIcon("logo.png");
 		frame.setIconImage(logo.getImage());
@@ -78,6 +81,7 @@ public class DiceBagWindow implements ActionListener{
 		frame.add(buttonK12);
 		frame.add(buttonK20);
 		frame.add(buttonK100);
+		frame.add(resultLabel);
 		frame.setResizable(false);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setLocationRelativeTo(null);
@@ -98,45 +102,53 @@ public class DiceBagWindow implements ActionListener{
 //		}
 		if(e.getSource() == buttonK4) {
 			Dice k4 = DiceBag.getK4();
+			System.out.println(k4);
 			int wynikRzutu;
 			wynikRzutu = k4.roll();
 			System.out.println("wynik rzutu: "+wynikRzutu);
+			resultLabel.setText(Integer.toString(wynikRzutu));
 		}
 		if(e.getSource() == buttonK6) {
 			Dice k6 = DiceBag.getK6();
 			int wynikRzutu;
 			wynikRzutu = k6.roll();
 			System.out.println("wynik rzutu: "+wynikRzutu);
+			resultLabel.setText(Integer.toString(wynikRzutu));
 		}
 		if(e.getSource() == buttonK8) {
 			Dice k8 = DiceBag.getK8();
 			int wynikRzutu;
 			wynikRzutu = k8.roll();
 			System.out.println("wynik rzutu: "+wynikRzutu);
+			resultLabel.setText(Integer.toString(wynikRzutu));
 		}
 		if(e.getSource() == buttonK10) {
 			Dice k10 = DiceBag.getK10();
 			int wynikRzutu;
 			wynikRzutu = k10.roll();
 			System.out.println("wynik rzutu: "+wynikRzutu);
+			resultLabel.setText(Integer.toString(wynikRzutu));
 		}
 		if(e.getSource() == buttonK12) {
 			Dice k12 = DiceBag.getK12();
 			int wynikRzutu;
 			wynikRzutu = k12.roll();
 			System.out.println("wynik rzutu: "+wynikRzutu);
+			resultLabel.setText(Integer.toString(wynikRzutu));
 		}
 		if(e.getSource() == buttonK20) {
 			Dice k20 = DiceBag.getK20();
 			int wynikRzutu;
 			wynikRzutu = k20.roll();
 			System.out.println("wynik rzutu: "+wynikRzutu);
+			resultLabel.setText(Integer.toString(wynikRzutu));
 		}
 		if(e.getSource() == buttonK100) {
 			Dice k100 = DiceBag.getK100();
 			int wynikRzutu;
 			wynikRzutu = k100.roll();
 			System.out.println("wynik rzutu: "+wynikRzutu);
+			resultLabel.setText(Integer.toString(wynikRzutu));
 		}
 		
 	}
