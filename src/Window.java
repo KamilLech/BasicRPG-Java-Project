@@ -51,7 +51,9 @@ public class Window implements ActionListener{
 		button1.addActionListener(this);
 		
 		frame.setLayout(new FlowLayout());
+		
 		frame.add(button1);
+
 		frame.setResizable(false);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setLocationRelativeTo(null);
