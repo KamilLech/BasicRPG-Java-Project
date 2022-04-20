@@ -22,7 +22,7 @@ public class Button extends JButton{
 		primaryColor = Main.theme.getPrimaryColor();
 		secondaryColor = Main.theme.getSecondaryColor();
 		this.setForeground(primaryColor);
-		this.setBackground(secondaryColor);
+		this.setBackground(Color.white);
 	}
 
 	
