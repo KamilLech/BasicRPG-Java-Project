@@ -1,6 +1,7 @@
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
+import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
@@ -71,6 +72,23 @@ public class DiceBagWindow implements ActionListener{
 		buttonK20.addActionListener(this);
 		buttonK100 = new Button("Rzuć K100");
 		buttonK100.addActionListener(this);
+		
+		ImageIcon iconK4 = new ImageIcon(new ImageIcon("k4.png").getImage().getScaledInstance(50, 50,  java.awt.Image.SCALE_SMOOTH));
+		ImageIcon iconK6 = new ImageIcon(new ImageIcon("k6.png").getImage().getScaledInstance(50, 50,  java.awt.Image.SCALE_SMOOTH));
+		ImageIcon iconK8 = new ImageIcon(new ImageIcon("k8.png").getImage().getScaledInstance(50, 50,  java.awt.Image.SCALE_SMOOTH));
+		ImageIcon iconK10 = new ImageIcon(new ImageIcon("k10.png").getImage().getScaledInstance(50, 50,  java.awt.Image.SCALE_SMOOTH));
+		ImageIcon iconK12 = new ImageIcon(new ImageIcon("k12.png").getImage().getScaledInstance(50, 50,  java.awt.Image.SCALE_SMOOTH));
+		ImageIcon iconK20 = new ImageIcon(new ImageIcon("k20.png").getImage().getScaledInstance(50, 50,  java.awt.Image.SCALE_SMOOTH));
+		ImageIcon iconK100 = new ImageIcon(new ImageIcon("k100.png").getImage().getScaledInstance(50, 50,  java.awt.Image.SCALE_SMOOTH));
+		
+		
+		buttonK4.setIcon(iconK4);
+		buttonK6.setIcon(iconK6);
+		buttonK8.setIcon(iconK8);
+		buttonK10.setIcon(iconK10);
+		buttonK12.setIcon(iconK12);
+		buttonK20.setIcon(iconK20);
+		buttonK100.setIcon(iconK100);
 		
 		frame.setLayout(new FlowLayout());
 		
